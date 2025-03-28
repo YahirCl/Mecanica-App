@@ -1,8 +1,38 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 ---
-
 <Layout>
-  <h1>Vector 1</h1>
-  <p>Este es un contenido de prueba.</p>
+    <!DOCTYPE html>
+<html lang="es">
+    
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto mt-6 p-6 bg-white shadow-md rounded-lg flex-grow">
+    <h2 class="text-2xl font-bold text-pink-600">¿Qué es la estática?</h2>
+    <p class="mt-2 text-gray-700">La palabra estática proviene del vocablo griego «statikos» que significa estacionado, quieto o en equilibrio...</p>
+    
+    <h2 class="text-2xl font-bold text-red-600 mt-6">¿Quién fue Newton?</h2>
+    <div class="flex gap-6 mt-4">
+      <img src="/src/assets/image/newton.jpg" alt="Newton con sable de luz" class="w-48 h-auto rounded shadow-lg">
+      <p class="text-gray-700">Isaac Newton nació en Woolsthorpe (Lincolnshire), un pueblo agrícola de Inglaterra...</p>
+
+    </div>
+
+    <!-- Video Section -->
+		<div class="mt-4">
+		<p class="text-blue-600 font-semibold">
+			<a href="https://www.youtube.com/watch?v=YZo7yIDrpow" target="_blank" class="hover:underline">
+			Mira el ejercicio aquí
+			</a>
+		</p>
+		<iframe 
+			class="w-[300px] h-[300px] rounded-lg shadow-lg" 
+			src="https://www.youtube.com/embed/YZo7yIDrpow" 
+			title="Video de YouTube" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen>
+		</iframe>
+		</div>
+  </main>
+</html>
 </Layout>

@@ -1,0 +1,31 @@
+---
+interface Props {
+  label: string;
+  href?: string;  // Si quieres que sea un enlace, puedes usar esta prop
+}
+
+const { label, href } = Astro.props;
+---
+
+{/*
+  Si prefieres un botón normal, usa <button>. 
+  Si deseas un enlace, usa <a> con href. Aquí te muestro las dos opciones:
+*/}
+
+{href 
+  ? (
+    <a 
+      href={href} 
+      class="inline-block bg-yellow-300 text-green-900 uppercase font-semibold px-6 py-2 rounded shadow hover:bg-yellow-400 transition-colors"
+    >
+      {label}
+    </a>
+  ) : (
+    <button 
+      type="button"
+      class="bg-yellow-300 text-green-900 uppercase font-semibold px-6 py-2 rounded shadow hover:bg-yellow-400 transition-colors"
+    >
+      {label}
+    </button>
+  )
+}
